@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Olívia Itajahy - Tratamento Humanizado para Perda de Peso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --primary-dark: #1d6d42;
+            --secondary: #4682b4;
+            --accent: #ff6b6b;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
+            --light-green: #e8f5e9;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-dark);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #3a71a0;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-5 {
+            margin-bottom: 3rem;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            font-weight: 500;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 180px 0 100px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        /* About */
+        .about {
+            background-color: white;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Approach */
+        .approach {
+            background-color: var(--light-green);
+        }
+        
+        .approach-cards {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .approach-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            flex: 1;
+        }
+        
+        .approach-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .approach-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        /* Plans */
+        .plans {
+            background: white;
+        }
+        
+        .plans-intro {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+        
+        .plans-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .plan-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: var(--transition);
+            flex: 1;
+            border: 1px solid #eee;
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .plan-header {
+            background: var(--primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .plan-header h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .plan-duration {
+            opacity: 0.9;
+        }
+        
+        .plan-features {
+            padding: 30px;
+        }
+        
+        .plan-features ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .plan-features ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .plan-features ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .plan-features ul li i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+        
+        .plan-action {
+            padding: 0 30px 30px;
+            text-align: center;
+        }
+        
+        /* Team */
+        .team {
+            background-color: var(--light);
+        }
+        
+        .team-members {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            flex: 1;
+        }
+        
+        .member-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.05);
+        }
+        
+        .member-info {
+            padding: 25px;
+        }
+        
+        .member-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .member-role {
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+        }
+        
+        .testimonials h2 {
+            color: white;
+        }
+        
+        .testimonials h2:after {
+            background: white;
+        }
+        
+        .testimonials-container {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text:before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            opacity: 0.2;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .author-role {
+            opacity: 0.8;
+        }
+        
+        /* CTA */
+        .cta {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta h2:after {
+            display: none;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 70px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column {
+            flex: 1;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            color: var(--primary);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-content, .approach-cards, .plans-container, .team-members, .footer-content {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                margin-top: 30px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-text">Dra. Olívia Itajahy<span>Clínica</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#approach">Abordagem</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Transforme sua vida com um tratamento humanizado para perda de peso</h1>
+            <p>Programa completo com acompanhamento médico, nutricional e psicológico para resultados duradouros</p>
+            <div class="hero-buttons">
+                <a href="#plans" class="btn btn-primary">Conhecer Planos</a>
+                <a href="#contact" class="btn btn-outline">Agendar Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tratamento Humanizado para Perda de Peso</h2>
+                    <p>Na clínica da Dra. Olívia Itajahy, acreditamos que a perda de peso sustentável vai além das dietas restritivas. Nosso método é baseado em uma abordagem integral que considera todas as dimensões do ser humano.</p>
+                    <p>Entendemos que cada paciente tem necessidades, desafios e objetivos únicos. Por isso, desenvolvemos um programa personalizado que combina acompanhamento médico especializado, suporte nutricional individualizado e apoio psicológico contínuo.</p>
+                    <p>Nossa missão é ajudar você a alcançar seus objetivos de peso e saúde de forma saudável, sustentável e, acima de tudo, com respeito à sua individualidade.</p>
+                    <a href="#approach" class="btn btn-primary">Conheça nossa abordagem</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Equipe médica humanizada">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Abordagem Multidisciplinar</h2>
+                <p>Nosso programa combina três especialidades essenciais para uma transformação completa</p>
+            </div>
+            
+            <div class="approach-cards">
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Acompanhamento Médico</h3>
+                    <p>Consultas regulares com a Dra. Olívia para avaliação clínica, exames, prescrição de tratamento personalizado e acompanhamento de resultados.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Acompanhamento Nutricional</h3>
+                    <p>Plano alimentar individualizado, educação nutricional, estratégias para mudança de hábitos e suporte contínuo para uma relação saudável com a comida.</p>
+                </div>
+                
+                <div class="approach-card">
+                    <div class="approach-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Acompanhamento Psicológico</h3>
+                    <p>Suporte emocional, identificação de padrões comportamentais, desenvolvimento de estratégias para lidar com desafios e fortalecimento da autoestima.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="plans">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Nossos Planos de Acompanhamento</h2>
+                <div class="plans-intro">
+                    <p>Oferecemos diferentes opções de planos para atender às necessidades individuais de cada paciente. Todos os planos incluem acompanhamento médico, nutricional e psicológico com profissionais especializados.</p>
+                </div>
+            </div>
+            
+            <div class="plans-container">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plano Essencial</h3>
+                        <div class="plan-price">R$ 480<span>/mês</span></div>
+                        <div class="plan-duration">Plano trimestral</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> 1 consulta médica mensal</li>
+                            <li><i class="fas fa-check-circle"></i> 1 consulta nutricional mensal</li>
+                            <li><i class="fas fa-check-circle"></i> 1 consulta psicológica mensal</li>
+                            <li><i class="fas fa-check-circle"></i> Acesso ao aplicativo de monitoramento</li>
+                            <li><i class="fas fa-check-circle"></i> Suporte por e-mail</li>
+                        </ul>
+                    </div>
+                    <div class="plan-action">
+                        <a href="#contact" class="btn btn-outline">Contratar Plano</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header" style="background: var(--secondary);">
+                        <h3>Plano Completo</h3>
+                        <div class="plan-price">R$ 680<span>/mês</span></div>
+                        <div class="plan-duration">Plano semestral</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> 2 consultas médicas mensais</li>
+                            <li><i class="fas fa-check-circle"></i> 2 consultas nutricionais mensais</li>
+                            <li><i class="fas fa-check-circle"></i> 2 consultas psicológicas mensais</li>
+                            <li><i class="fas fa-check-circle"></i> Acesso ao aplicativo premium</li>
+                            <li><i class="fas fa-check-circle"></i> Suporte por WhatsApp</li>
+                            <li><i class="fas fa-check-circle"></i> Grupo de apoio online</li>
+                            <li><i class="fas fa-check-circle"></i> Materiais educativos exclusivos</li>
+                        </ul>
+                    </div>
+                    <div class="plan-action">
+                        <a href="#contact" class="btn btn-primary">Contratar Plano</a>
+                    </div>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plano Premium</h3>
+                        <div class="plan-price">R$ 980<span>/mês</span></div>
+                        <div class="plan-duration">Plano anual</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Consultas médicas ilimitadas</li>
+                            <li><i class="fas fa-check-circle"></i> Consultas nutricionais ilimitadas</li>
+                            <li><i class="fas fa-check-circle"></i> Consultas psicológicas ilimitadas</li>
+                            <li><i class="fas fa-check-circle"></i> Acesso completo ao aplicativo</li>
+                            <li><i class="fas fa-check-circle"></i> Suporte 24h por WhatsApp</li>
+                            <li><i class="fas fa-check-circle"></i> Consultas domiciliares (1x/mês)</li>
+                            <li><i class="fas fa-check-circle"></i> Programa de exercícios personalizado</li>
+                            <li><i class="fas fa-check-circle"></i> Avaliação de composição corporal mensal</li>
+                        </ul>
+                    </div>
+                    <div class="plan-action">
+                        <a href="#contact" class="btn btn-outline">Contratar Plano</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Nossa Equipe Especializada</h2>
+                <p>Profissionais dedicados ao seu sucesso e bem-estar</p>
+            </div>
+            
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Dra. Olívia Itajahy">
+                    </div>
+                    <div class="member-info">
+                        <h4>Dra. Olívia Itajahy</h4>
+                        <span class="member-role">Médica Endocrinologista</span>
+                        <p>Especialista em perda de peso e mudança de estilo de vida com mais de 15 anos de experiência.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Nutricionista">
+                    </div>
+                    <div class="member-info">
+                        <h4>Camila Mendes</h4>
+                        <span class="member-role">Nutricionista</span>
+                        <p>Especialista em nutrição comportamental e reeducação alimentar para perda de peso sustentável.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Psicóloga">
+                    </div>
+                    <div class="member-info">
+                        <h4>Dr. Rafael Torres</h4>
+                        <span class="member-role">Psicólogo</span>
+                        <p>Especialista em comportamento alimentar e mudança de hábitos com abordagem cognitivo-comportamental.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Depoimentos de Pacientes</h2>
+                <p>Histórias reais de transformação e conquistas</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>Depois de tentar diversas dietas sem sucesso, encontrei na Dra. Olívia e sua equipe uma abordagem completamente diferente. Não se trata apenas de perder peso, mas de transformar a relação com a comida e comigo mesma. Em 8 meses, perdi 22kg e ganhei uma nova vida!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Ana">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Carolina</h4>
+                            <div class="author-role">Paciente há 10 meses</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>O apoio psicológico foi fundamental para meu processo. O Dr. Rafael me ajudou a entender os gatilhos emocionais que me levavam a comer compulsivamente. Com a ajuda da Camila, aprendi a me alimentar de forma saudável sem radicalismos. Hoje me sinto no controle da minha vida!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Carlos">
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Eduardo</h4>
+                            <div class="author-role">Paciente há 6 meses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Pronto para transformar sua vida?</h2>
+            <p>Agende uma consulta inicial e descubra como nosso programa personalizado pode ajudá-lo a alcançar seus objetivos de saúde e bem-estar.</p>
+            <a href="#contact" class="btn btn-primary">Agendar Consulta</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Dra. Olívia Itajahy</h3>
+                    <p>Especializada em tratamento humanizado para perda de peso com abordagem multidisciplinar e acompanhamento integral.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#approach">Abordagem</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="#team">Equipe</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>Av. Presidente Vargas, 1000<br>Centro, Rio de Janeiro - RJ</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>(21) 99999-9999</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>contato@draliviaitajahy.com.br</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>Seg-Sex: 8h às 18h<br>Sáb: 8h às 12h</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Dra. Olívia Itajahy. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Sticky header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
